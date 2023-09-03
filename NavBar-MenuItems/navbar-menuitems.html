@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Munuitems</title>
+    <style>
+        .menu-items {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        #main-menu {
+            background-color: darkgray;
+        }
+
+        #main-menu>li {
+            display: inline-block;
+        }
+
+        #main-menu>li>a {
+            padding: 8px;
+            color: white;
+        }
+
+        #main-menu>li>a:hover {
+            background-color: black;
+        }
+
+        #main-menu-item-2 {
+            position: relative;
+        }
+
+        #sub-menu {
+            position: absolute;
+            background-color: lightgray;
+            white-space: nowrap;
+            top: 100px;
+            padding: 10px;
+
+            display: none;
+        }
+
+        #main-manu-item-2:hover #sub-menu {
+            display: block;
+        }
+
+        header>h1 {
+            background-color: red;
+            margin: 0%;
+            text-align: right;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Demo of Dropdown</h1>
+    </header>
+    <nav>
+        <ul id="main-menu" class="menu-items">
+            <li><a href="link-1">Link 1</a></li>
+            <li id="main-manu-item-2">
+                <a href="link-2">Link 2</a>
+                <ul id="sub-menu" class="menu-items">
+                    <li><a href="/dd-link-1">DD_Link_1</a></li>
+                    <li><a href="/dd-link-2">DD_Link_2</a></li>
+                    <li><a href="/dd-link-3">DD_Link_3</a></li>
+                </ul>
+            </li>
+            <li id="main-manu-item-2">
+                <a href="link-3">Link 3</a>
+                <ul id="sub-menu" class="menu-items">
+                    <li><a href="/dd-link-1">DD_Link_1</a></li>
+                    <li><a href="/dd-link-2">DD_Link_2</a></li>
+                    <li><a href="/dd-link-3">DD_Link_3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

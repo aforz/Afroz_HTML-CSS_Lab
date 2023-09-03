@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bar-chart{
+            background-color: lightgray;
+            width: 195px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .bar{
+            background-color: darkgray;
+            height: 300px;
+            width: 30px;
+            display: inline-block;
+            margin: 15px;
+        }
+        .animation-bar{
+            height: 100%;
+            background-color: white;
+        }
+
+        @keyframes animation-bar-1{
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 70%;
+            }
+        }
+
+        #animation-bar-1{
+            animation-name: animation-bar-1;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animation-bar-2{
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 60%;
+            }
+        }
+
+        #animation-bar-2{
+            animation-name: animation-bar-2;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animation-bar-3{
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 20%;
+            }
+        }
+
+        #animation-bar-3{
+            animation-name: animation-bar-3;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .bar-with-percentage-value{
+            display: inline-block;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bar-chart">
+        <div class="bar-with-percentage-value">
+            <div class="bar">
+                <div class="animation-bar" id="animation-bar-1">
+    
+                </div>
+            </div>
+            <br/>
+            30%
+        </div>
+        <div class="bar-with-percentage-value">
+            <div class="bar">
+                <div class="animation-bar" id="animation-bar-2">
+    
+                </div>
+            </div>
+            <br/>
+            40%
+        </div>
+        <div class="bar-with-percentage-value">
+            <div class="bar">
+                <div class="animation-bar" id="animation-bar-3">
+    
+                </div>
+            </div>
+            <br/>
+            80%
+        </div>
+        <b>Bar Plot</b>
+    </div>
+</body>
+</html>
